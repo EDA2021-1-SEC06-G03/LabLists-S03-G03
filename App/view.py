@@ -87,10 +87,10 @@ Menu principal
 while True:
     printMenu()
     inputs = input('Seleccione una opción para continuar\n')
+    catalog = initCatalog()
+    loadData(catalog)
     if int(inputs[0]) == 1:
         print("Cargando información de los archivos ....")
-        catalog = initCatalog()
-        loadData(catalog)
         print('Libros cargados: ' + str(lt.size(catalog['books'])))
         print('Autores cargados: ' + str(lt.size(catalog['authors'])))
         print('Géneros cargados: ' + str(lt.size(catalog['tags'])))
