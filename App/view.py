@@ -99,7 +99,7 @@ while True:
         print('Asociación de Géneros a Libros cargados: ' +
               str(lt.size(catalog['book_tags'])))
         #time_2 = time.time()
-        print('Segundos de carga :{}'.format(str(time_2-time_1)))
+        #print('Segundos de carga :{}'.format(str(time_2-time_1)))
         
 
     elif int(inputs[0]) == 2:
